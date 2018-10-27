@@ -66,11 +66,11 @@ public class BoneThrow : MonoBehaviour {
             {
                 liftingUp = false;
                 charging = true;
+                charged = true;
             }
             else if (transform.rotation == endRotation.rotation)
             {
                 charging = false;
-                charged = true;
             }
             if (transform.rotation == endBackTiltRotation.rotation)
             {
@@ -94,7 +94,7 @@ public class BoneThrow : MonoBehaviour {
                         0f,
                         ForceMode.Impulse
                     );
-                    thisRB.AddRelativeTorque(Vector3.up * spinForce, ForceMode.Impulse);
+                    thisRB.AddRelativeTorque(Vector3.up * -spinForce, ForceMode.Impulse);
                 }
             }
         }
