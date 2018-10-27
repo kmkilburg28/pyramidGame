@@ -14,7 +14,7 @@ public class WeaponBone : MonoBehaviour {
 		
 	}
 
-    private void OnMouseDown()
+     void OnMouseDown()
     {
         transform.Rotate(new Vector3(0f, 90f, 0f));
         
