@@ -6,9 +6,11 @@ public class CameraMovement : MonoBehaviour {
 
     public Vector3 mousePosition;
 
+    GameObject player;
+
     // Use this for initialization
     void Start () {
-		
+        player = GameObject.Find("Player");
 	}
 	
 	// Update is called once per frame
@@ -16,29 +18,34 @@ public class CameraMovement : MonoBehaviour {
     {
 
         mousePosition = Input.mousePosition;
-        mousePosition.x += Screen.width / 2;
-        mousePosition.y += Screen.height / 2;
+        mousePosition.x -= Screen.width / 2;
+        mousePosition.y -= Screen.height / 2;
         mousePosition.z = transform.position.z;
-        Quaternion rotation = Quaternion.Euler(0, FindAngle(), 0);
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 1);
-        Debug.Log(mousePosition);
-        Debug.Log(Screen.width / 2);
-        Debug.Log(Screen.height / 2);
+
+        float intensityX = Mathf.Abs(mousePosition.x / (Screen.width / 2));
+        float intensityY = Mathf.Abs(mousePosition.y / (Screen.height / 2));
+        Debug.Log(intensityX);
+        Debug.Log(intensityY);
+
+
+        Quaternion direction = new Quaternion();
+        // Get new direction
+        direction.SetLookRotation(new Vector3(0f, mousePosition.y, 0f));
+        transform.rotation = Quaternion.RotateTowards(transform.rotation,
+                                                      direction, intensityY);
+
     }
 
 
 
-    private float FindAngle()
+    private float FindAngle(float position)
     {
         float angle;
-        float distanceX = mousePosition.x - Screen.width / 2;
-        float distanceY = mousePosition.y - Screen.height / 2;
+        float distanceX = mousePosition.x - transform.position.x;
+        float distanceY = mousePosition.y - transform.position.y;
         angle = Mathf.Rad2Deg * Mathf.Atan(distanceY / distanceX);
-        if (mousePosition.x < transform.position.x)
-        {
-            angle -= 180;
-        }
-        return angle + -90;
+
+        return angle;
     }
 
 }
