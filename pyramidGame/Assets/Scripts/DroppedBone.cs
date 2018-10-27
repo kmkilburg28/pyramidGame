@@ -25,6 +25,19 @@ public class DroppedBone : MonoBehaviour {
         }
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag("player"))
+        {
+            if (Input.GetKeyUp(KeyCode.R))
+            {
+                GManager.numBones++;
+                GManager.AddText("");
+                Destroy(this.gameObject);
+            }
+        }
+    }
+
     void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("player"))
