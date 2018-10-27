@@ -19,10 +19,12 @@ public class EnemyShooting : MonoBehaviour {
     public float shotTime = 0;
     public float shootForce;
 
-    // Use this for initialization
-    void Start () {
-	
+    Rigidbody thisRB;
 
+    // Use this for initialization
+    void Start ()
+    {
+        thisRB = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
@@ -38,10 +40,13 @@ public class EnemyShooting : MonoBehaviour {
                 shotTime = Time.time;
                 //bullet = Instantiate(bullet, transform.position, transform.rotation);
                 Instantiate(projectile, transform.position + (tr_Player.position - transform.position).normalized, Quaternion.LookRotation(tr_Player.position - transform.position));
-
-                projectile.GetComponent<Rigidbody>().AddForce(transform.forward * shootForce);
-
-
+                
+                thisRB.AddRelativeForce(
+                    shootForce,
+                    0f,
+                    0f,
+                    ForceMode.Impulse
+                );
             }
         }
 
