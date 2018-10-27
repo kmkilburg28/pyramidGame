@@ -16,8 +16,8 @@ public class BoneHit : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        startHitRotation = GameObject.Find("ArmBoneStart").GetComponent<Transform>();
-        endHitRotation = GameObject.Find("ArmBoneEnd").GetComponent<Transform>();
+        startHitRotation = GameObject.Find("HitArmBoneStart").GetComponent<Transform>();
+        endHitRotation = GameObject.Find("HitArmBoneEnd").GetComponent<Transform>();
         attacking = false;
         halfway = false;
 	}
@@ -39,12 +39,11 @@ public class BoneHit : MonoBehaviour {
 
             }
         }
-        Debug.Log(attacking);
         if (transform.rotation == endHitRotation.rotation)
         {
             halfway = true;
         }
-        if (transform.rotation == startHitRotation.rotation)
+        else if (transform.rotation == startHitRotation.rotation)
         {
             attacking = false;
             halfway = false;
