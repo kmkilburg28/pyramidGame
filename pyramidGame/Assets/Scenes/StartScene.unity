@@ -397,8 +397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tr_Player: {fileID: 393403785}
-  projectile: {fileID: 4933418288086584, guid: 1b1b7b62792a8e64f8dfce4268edf858, type: 2}
-  bullet: {fileID: 0}
+  projectile: {fileID: 1459238651990388, guid: 1b1b7b62792a8e64f8dfce4268edf858, type: 2}
   maximumLookDistance: 30
   maximumAttackDistance: 10
   minimumDistanceFromPlayer: 2
@@ -406,7 +405,7 @@ MonoBehaviour:
   rotationDamping: 2
   shotInterval: 0.5
   shotTime: 0
-  shootForce: 500
+  shootForce: 10
 --- !u!4 &338285497 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4963493842649412, guid: fd8ff6bb31668a84ca8b24a79ae985b9,

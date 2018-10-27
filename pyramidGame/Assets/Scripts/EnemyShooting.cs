@@ -6,8 +6,7 @@ public class EnemyShooting : MonoBehaviour {
 
 
     public Transform tr_Player;
-    public Transform projectile;
-    public GameObject bullet;
+    public GameObject projectile;
 
     public float maximumLookDistance = 30;
     public float maximumAttackDistance = 10;
@@ -19,12 +18,10 @@ public class EnemyShooting : MonoBehaviour {
     public float shotTime = 0;
     public float shootForce;
 
-    Rigidbody thisRB;
-
     // Use this for initialization
     void Start ()
     {
-        thisRB = GetComponent<Rigidbody>();
+
 	}
 	
 	// Update is called once per frame
@@ -39,12 +36,14 @@ public class EnemyShooting : MonoBehaviour {
                 
                 shotTime = Time.time;
                 //bullet = Instantiate(bullet, transform.position, transform.rotation);
-                Instantiate(projectile, transform.position + (tr_Player.position - transform.position).normalized, Quaternion.LookRotation(tr_Player.position - transform.position));
-                
-                thisRB.AddRelativeForce(
+                GameObject bullet = Instantiate(projectile, transform.position + (tr_Player.position - transform.position).normalized, Quaternion.LookRotation(tr_Player.position - transform.position));
+
+                Rigidbody bulletRB = bullet.GetComponent<Rigidbody>();
+
+                bulletRB.AddRelativeForce(
+                    0f,
+                    0f,
                     shootForce,
-                    0f,
-                    0f,
                     ForceMode.Impulse
                 );
             }
