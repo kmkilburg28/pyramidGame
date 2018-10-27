@@ -14,7 +14,7 @@ public class DestructibleObj : MonoBehaviour {
 
 
 
-
+   
     // Use this for initialization
     void Start () {
 		
