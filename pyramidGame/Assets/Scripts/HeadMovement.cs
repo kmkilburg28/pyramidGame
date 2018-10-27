@@ -16,7 +16,7 @@ public class HeadMovement : MonoBehaviour
 
     private float yaw = 0.0f;
     private float pitch = 0.0f;
-    private float stillWindowSize = 0.05f;
+    public float stillWindowSize;
 
 
     // Use this for initialization
@@ -28,7 +28,7 @@ public class HeadMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(body.transform.position.x, body.transform.position.y+1, body.transform.position.z);
+        transform.position = new Vector3(body.transform.position.x, body.transform.position.y+body.transform.localScale.y*1.25f, body.transform.position.z);
 
 
         mousePosition = Input.mousePosition;
