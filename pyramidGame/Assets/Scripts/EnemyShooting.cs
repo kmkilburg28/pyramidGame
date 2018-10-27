@@ -36,9 +36,9 @@ public class EnemyShooting : MonoBehaviour {
             {
                 
                 shotTime = Time.time;
-                bullet = Instantiate(bullet, transform.position, transform.rotation);
-               
-           
+                //bullet = Instantiate(bullet, transform.position, transform.rotation);
+                Instantiate(projectile, transform.position + (tr_Player.position - transform.position).normalized, Quaternion.LookRotation(tr_Player.position - transform.position));
+
                 projectile.GetComponent<Rigidbody>().AddForce(transform.forward * shootForce);
 
 
