@@ -11,6 +11,11 @@ ModelImporter:
     100010: Cylinder.016
     100012: Cylinder.017
     100014: //RootNode
+    100016: BottomLeftArm
+    100018: BottomRightArm
+    100020: Skull.001
+    100022: TopLeftArm.001
+    100024: TopRightArm.001
     400000: Cube.005
     400002: Cube.006
     400004: Cube.007
@@ -19,6 +24,11 @@ ModelImporter:
     400010: Cylinder.016
     400012: Cylinder.017
     400014: //RootNode
+    400016: BottomLeftArm
+    400018: BottomRightArm
+    400020: Skull.001
+    400022: TopLeftArm.001
+    400024: TopRightArm.001
     2100000: No Name
     2300000: Cube.005
     2300002: Cube.006
@@ -27,6 +37,11 @@ ModelImporter:
     2300008: Cylinder.015
     2300010: Cylinder.016
     2300012: Cylinder.017
+    2300014: BottomLeftArm
+    2300016: BottomRightArm
+    2300018: Skull.001
+    2300020: TopLeftArm.001
+    2300022: TopRightArm.001
     3300000: Cube.005
     3300002: Cube.006
     3300004: Cube.007
@@ -34,6 +49,11 @@ ModelImporter:
     3300008: Cylinder.015
     3300010: Cylinder.016
     3300012: Cylinder.017
+    3300014: BottomLeftArm
+    3300016: BottomRightArm
+    3300018: Skull.001
+    3300020: TopLeftArm.001
+    3300022: TopRightArm.001
     4300000: Cylinder.016
     4300002: Cylinder.017
     4300004: Cube.007
@@ -41,6 +61,11 @@ ModelImporter:
     4300008: Cube.005
     4300010: Cylinder.010
     4300012: Cylinder.015
+    4300014: TopLeftArm.001
+    4300016: BottomLeftArm
+    4300018: Skull.001
+    4300020: TopRightArm.001
+    4300022: BottomRightArm
     7400000: Cylinder.016|Cylinder.007Action
     7400002: Cylinder.016|Cylinder.007Action.001
     7400004: Cylinder.016|Cylinder.008Action
@@ -49,6 +74,30 @@ ModelImporter:
     7400010: Cylinder.010|Cylinder.007Action.001
     7400012: Cylinder.010|Cylinder.008Action
     7400014: Cylinder.010|Cylinder.008Action.001
+    7400016: Cylinder.016|Cylinder.007Action.002
+    7400018: Cylinder.016|Cylinder.007Action.003
+    7400020: Cylinder.016|Cylinder.008Action.002
+    7400022: Cylinder.016|Cylinder.008Action.003
+    7400024: Cylinder.010|Cylinder.007Action.002
+    7400026: Cylinder.010|Cylinder.007Action.003
+    7400028: Cylinder.010|Cylinder.008Action.002
+    7400030: Cylinder.010|Cylinder.008Action.003
+    7400032: TopLeftArm.001|Cylinder.007Action
+    7400034: TopLeftArm.001|Cylinder.007Action.001
+    7400036: TopLeftArm.001|Cylinder.007Action.002
+    7400038: TopLeftArm.001|Cylinder.007Action.003
+    7400040: TopLeftArm.001|Cylinder.008Action
+    7400042: TopLeftArm.001|Cylinder.008Action.001
+    7400044: TopLeftArm.001|Cylinder.008Action.002
+    7400046: TopLeftArm.001|Cylinder.008Action.003
+    7400048: TopRightArm.001|Cylinder.007Action
+    7400050: TopRightArm.001|Cylinder.007Action.001
+    7400052: TopRightArm.001|Cylinder.007Action.002
+    7400054: TopRightArm.001|Cylinder.007Action.003
+    7400056: TopRightArm.001|Cylinder.008Action
+    7400058: TopRightArm.001|Cylinder.008Action.001
+    7400060: TopRightArm.001|Cylinder.008Action.002
+    7400062: TopRightArm.001|Cylinder.008Action.003
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -101,7 +150,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
+    previousCalculatedGlobalScale: 0.001
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60

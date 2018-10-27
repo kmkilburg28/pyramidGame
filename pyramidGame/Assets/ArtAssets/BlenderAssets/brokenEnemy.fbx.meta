@@ -29,6 +29,11 @@ ModelImporter:
     100046: Cylinder.031
     100048: Cylinder.032
     100050: Cylinder.033
+    100052: BottomLeftArm
+    100054: BottomRightArm
+    100056: Skull
+    100058: TopLeftArm
+    100060: TopRightArm
     400000: //RootNode
     400002: Cube.005
     400004: Cube.006
@@ -55,6 +60,11 @@ ModelImporter:
     400046: Cylinder.031
     400048: Cylinder.032
     400050: Cylinder.033
+    400052: BottomLeftArm
+    400054: BottomRightArm
+    400056: Skull
+    400058: TopLeftArm
+    400060: TopRightArm
     2100000: No Name
     2300000: Cube.005
     2300002: Cube.006
@@ -79,6 +89,11 @@ ModelImporter:
     2300040: Cylinder.031
     2300042: Cylinder.032
     2300044: Cylinder.033
+    2300046: BottomLeftArm
+    2300048: BottomRightArm
+    2300050: Skull
+    2300052: TopLeftArm
+    2300054: TopRightArm
     3300000: Cube.005
     3300002: Cube.006
     3300004: Cube.007
@@ -102,6 +117,11 @@ ModelImporter:
     3300040: Cylinder.031
     3300042: Cylinder.032
     3300044: Cylinder.033
+    3300046: BottomLeftArm
+    3300048: BottomRightArm
+    3300050: Skull
+    3300052: TopLeftArm
+    3300054: TopRightArm
     4300000: Cylinder.016
     4300002: Cylinder.017
     4300004: Cube.007
@@ -125,6 +145,11 @@ ModelImporter:
     4300040: Cube.009
     4300042: Cylinder.030
     4300044: Cylinder.031
+    4300046: TopRightArm
+    4300048: BottomRightArm
+    4300050: Skull
+    4300052: TopLeftArm
+    4300054: BottomLeftArm
     7400000: Cylinder.016|Cylinder.007Action
     7400002: Cylinder.016|Cylinder.007Action.001
     7400004: Cylinder.016|Cylinder.008Action
@@ -149,6 +174,22 @@ ModelImporter:
     7400042: Cylinder.030|Cylinder.008Action.001
     7400044: Cylinder.030|Cylinder.008Action.002
     7400046: Cylinder.030|Cylinder.008Action.003
+    7400048: TopRightArm|Cylinder.007Action
+    7400050: TopRightArm|Cylinder.007Action.001
+    7400052: TopRightArm|Cylinder.007Action.002
+    7400054: TopRightArm|Cylinder.007Action.003
+    7400056: TopRightArm|Cylinder.008Action
+    7400058: TopRightArm|Cylinder.008Action.001
+    7400060: TopRightArm|Cylinder.008Action.002
+    7400062: TopRightArm|Cylinder.008Action.003
+    7400064: TopLeftArm|Cylinder.007Action
+    7400066: TopLeftArm|Cylinder.007Action.001
+    7400068: TopLeftArm|Cylinder.007Action.002
+    7400070: TopLeftArm|Cylinder.007Action.003
+    7400072: TopLeftArm|Cylinder.008Action
+    7400074: TopLeftArm|Cylinder.008Action.001
+    7400076: TopLeftArm|Cylinder.008Action.002
+    7400078: TopLeftArm|Cylinder.008Action.003
     9500000: //RootNode
     10800000: Sun.006
     10800002: Sun.007

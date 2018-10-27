@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Destructible : MonoBehaviour {
+public class DestructibleObj : MonoBehaviour {
 
     public GameObject destroyedVersion;
 

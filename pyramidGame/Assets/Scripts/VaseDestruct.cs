@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Destructible : MonoBehaviour {
+public class VaseDestruct : MonoBehaviour {
 
     public GameObject destroyedVersion;
 
      void OnMouseDown()
     {
         Instantiate(destroyedVersion, transform.position, transform.rotation);
-        Destroy(transform.parent.gameObject);
+        Destroy(gameObject);
     }
 
 
