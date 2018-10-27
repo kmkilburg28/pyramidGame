@@ -42,12 +42,7 @@ public class BodyMovement : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
-            /*thisRB.AddForce(
-                0f,
-                jumpForce,
-                0f,
-                ForceMode.Impulse
-            );*/
+           
             yVelocity = jumpForce;
         }
 
