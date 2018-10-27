@@ -12,8 +12,8 @@ public class EnemyFollow : MonoBehaviour {
         // Use this for initialization\r
         void Start()
     {
-
-    tr_Player = GameObject.FindGameObjectWithTag("player").transform;
+        GManager = GameObject.Find("GManager").GetComponent<GManager>();
+        tr_Player = GameObject.FindGameObjectWithTag("player").transform;
     }
 
     // Update is called once per frame\r
@@ -31,7 +31,9 @@ public class EnemyFollow : MonoBehaviour {
      {
             if (other.gameObject.CompareTag("player"))
             {
-                Destroy(GameObject.FindGameObjectWithTag("player"));
-            }
+                Destroy(gameObject);
+                GManager.numBones--;
+           
+        }
       }
 }
