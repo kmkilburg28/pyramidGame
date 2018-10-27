@@ -13,6 +13,8 @@ public class GManager : MonoBehaviour {
 
     Text boneBar;
 
+    public GameObject startingChargeBone;
+
 
     // Use this for initialization
     void Start()
@@ -30,10 +32,21 @@ public class GManager : MonoBehaviour {
             boneString += "|";
         }
         boneBar.text = "Number of Bones:  " + boneString;
+
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            SpawnChargeBone();
+        }
     }
 
     public void AddText(string textToAdd)
     {
         prompt.text = textToAdd;
+    }
+
+    void SpawnChargeBone()
+    {
+        GameObject chargeBone = Instantiate(startingChargeBone, startingChargeBone.transform.position, startingChargeBone.transform.rotation, GameObject.Find("ThrowablePoint").GetComponent<Transform>());
+        chargeBone.SetActive(true);
     }
 }
