@@ -28,7 +28,7 @@ public class HeadMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(body.transform.position.x, body.transform.position.y+body.transform.localScale.y*1.25f, body.transform.position.z);
+        transform.position = new Vector3(body.transform.position.x, body.transform.position.y+body.transform.localScale.y/1.1f, body.transform.position.z);
 
 
         mousePosition = Input.mousePosition;

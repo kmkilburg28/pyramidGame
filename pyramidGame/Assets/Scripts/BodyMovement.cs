@@ -84,10 +84,10 @@ public class BodyMovement : MonoBehaviour {
 
         Collider[] beneath = Physics.OverlapBox(
            // Center point of search box
-            new Vector3(transform.position.x, transform.position.y, transform.position.z),
+            new Vector3(transform.position.x, transform.position.y - transform.localScale.y/2, transform.position.z),
 
            // Width and height of search area
-            new Vector3(transform.localScale.x - 0.1f, transform.localScale.y, transform.localScale.z),
+            new Vector3(transform.localScale.x, transform.localScale.y/2, transform.localScale.z),
 
            // Z rotation
             transform.localRotation);
