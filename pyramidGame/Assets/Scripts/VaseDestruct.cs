@@ -6,12 +6,15 @@ public class VaseDestruct : MonoBehaviour {
 
     public GameObject destroyedVersion;
 
-     void OnMouseDown()
+    
+    void OnTriggerEnter(Collider other)
     {
-        Instantiate(destroyedVersion, transform.position, transform.rotation);
-        Destroy(gameObject);
+        if (other.gameObject.CompareTag("bone"))
+        {
+            Instantiate(destroyedVersion, transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
     }
-
 
 
 

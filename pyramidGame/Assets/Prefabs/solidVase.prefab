@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 54191499198471140}
   - component: {fileID: 64477427650576020}
   - component: {fileID: 114772819766284060}
+  - component: {fileID: 64585767284071802}
   m_Layer: 0
   m_Name: solidVase
   m_TagString: Untagged
@@ -109,6 +110,20 @@ MeshCollider:
   m_GameObject: {fileID: 1361404036968564}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 0a9f40e91712b3845a90ae891531dd04, type: 3}
+--- !u!64 &64585767284071802
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1361404036968564}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 3
   m_Convex: 1
