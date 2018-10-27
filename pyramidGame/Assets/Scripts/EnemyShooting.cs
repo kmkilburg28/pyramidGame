@@ -39,7 +39,7 @@ public class EnemyShooting : MonoBehaviour {
                 bullet = Instantiate(bullet, transform.position, transform.rotation);
                
            
-                bullet.GetComponent<Rigidbody>().AddForce(transform.forward * shootForce);
+                projectile.GetComponent<Rigidbody>().AddForce(transform.forward * shootForce);
 
 
             }
