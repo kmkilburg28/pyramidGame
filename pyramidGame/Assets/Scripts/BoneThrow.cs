@@ -7,6 +7,10 @@ public class BoneThrow : MonoBehaviour {
     public float upSpeed;
 
     public float chargeSpeed;
+
+    public float launchForce;
+
+    public float spinForce;
     
     Transform startRotation;
 
@@ -16,8 +20,13 @@ public class BoneThrow : MonoBehaviour {
 
     Transform endBackTiltRotation;
 
+    GManager GManager;
+
+    Rigidbody thisRB;
+
     private bool liftingUp;
     private bool charging;
+    private bool charged;
 
     // Use this for initialization
     void Start ()
@@ -28,42 +37,66 @@ public class BoneThrow : MonoBehaviour {
         endBackTiltRotation = GameObject.Find("ThrowArmBoneEndBackTilt").GetComponent<Transform>();
         liftingUp = true;
         charging = false;
+        GManager = GameObject.Find("GManager").GetComponent<GManager>();
+        thisRB = GetComponent<Rigidbody>();
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        if (liftingUp)
+        if (transform.parent != null)
         {
-            float step = upSpeed * Time.deltaTime;
-            transform.rotation = Quaternion.RotateTowards(transform.rotation,
-                                                          uprightRotation.rotation, step);
-        }
-        else if (charging)
-        {
-            float step = chargeSpeed * Time.deltaTime;
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, endRotation.rotation, step);
-        }
-        else
-        {
-            Debug.Log("Back Tilting");
-            float step = chargeSpeed * Time.deltaTime;
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, endBackTiltRotation.rotation, step);
-        }
-        if (transform.rotation == uprightRotation.rotation)
-        {
-            liftingUp = false;
-            charging = true;
-        }
-        else if (transform.rotation == endRotation.rotation)
-        {
-            Debug.Log("Stop charging");
-            charging = false;
-        }
-        if (transform.rotation == endBackTiltRotation.rotation)
-        {
-            Debug.Log("Return to charging");
-            charging = true;
+            if (liftingUp)
+            {
+                float step = upSpeed * Time.deltaTime;
+                transform.rotation = Quaternion.RotateTowards(transform.rotation,
+                                                              uprightRotation.rotation, step);
+            }
+            else if (charging)
+            {
+                float step = chargeSpeed * Time.deltaTime;
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, endRotation.rotation, step);
+            }
+            else
+            {
+                float step = chargeSpeed * Time.deltaTime;
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, endBackTiltRotation.rotation, step);
+            }
+            if (transform.rotation == uprightRotation.rotation)
+            {
+                liftingUp = false;
+                charging = true;
+            }
+            else if (transform.rotation == endRotation.rotation)
+            {
+                charging = false;
+                charged = true;
+            }
+            if (transform.rotation == endBackTiltRotation.rotation)
+            {
+                charging = true;
+            }
+
+            if (Input.GetKeyUp(KeyCode.Mouse1))
+            {
+                if (!charged)
+                {
+                    GManager.numBones++;
+                    Destroy(this.gameObject);
+                }
+                else
+                {
+                    transform.parent = null;
+                    thisRB.isKinematic = false;
+                    thisRB.AddRelativeForce(
+                        launchForce,
+                        0f,
+                        0f,
+                        ForceMode.Impulse
+                    );
+                    thisRB.AddRelativeTorque(Vector3.up * spinForce, ForceMode.Impulse);
+                }
+            }
         }
     }
 }

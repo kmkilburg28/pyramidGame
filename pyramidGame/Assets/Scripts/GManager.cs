@@ -46,7 +46,11 @@ public class GManager : MonoBehaviour {
 
     void SpawnChargeBone()
     {
-        GameObject chargeBone = Instantiate(startingChargeBone, startingChargeBone.transform.position, startingChargeBone.transform.rotation, GameObject.Find("ThrowablePoint").GetComponent<Transform>());
-        chargeBone.SetActive(true);
+        if (numBones > 1)
+        {
+            GameObject chargeBone = Instantiate(startingChargeBone, startingChargeBone.transform.position, startingChargeBone.transform.rotation, GameObject.Find("ThrowablePoint").GetComponent<Transform>());
+            chargeBone.SetActive(true);
+            numBones--;
+        }
     }
 }
