@@ -6,12 +6,13 @@ public class CameraMovement : MonoBehaviour {
 
     public Vector3 mousePosition;
 
-    GameObject player;
+    Vector3 shiftVelocity;
 
     // Use this for initialization
-    void Start () {
-        player = GameObject.Find("Player");
-	}
+    void Start ()
+    {
+        shiftVelocity = new Vector3(0f, 1f, 0f);
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -22,30 +23,15 @@ public class CameraMovement : MonoBehaviour {
         mousePosition.y -= Screen.height / 2;
         mousePosition.z = transform.position.z;
 
-        float intensityX = Mathf.Abs(mousePosition.x / (Screen.width / 2));
         float intensityY = Mathf.Abs(mousePosition.y / (Screen.height / 2));
-        Debug.Log(intensityX);
         Debug.Log(intensityY);
-
 
         Quaternion direction = new Quaternion();
         // Get new direction
-        direction.SetLookRotation(new Vector3(0f, mousePosition.y, 0f));
+        direction = Quaternion.Euler(new Vector3(mousePosition.y, 0f, 0f));
         transform.rotation = Quaternion.RotateTowards(transform.rotation,
                                                       direction, intensityY);
 
-    }
-
-
-
-    private float FindAngle(float position)
-    {
-        float angle;
-        float distanceX = mousePosition.x - transform.position.x;
-        float distanceY = mousePosition.y - transform.position.y;
-        angle = Mathf.Rad2Deg * Mathf.Atan(distanceY / distanceX);
-
-        return angle;
     }
 
 }
