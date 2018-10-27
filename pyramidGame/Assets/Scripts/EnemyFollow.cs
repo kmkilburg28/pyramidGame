@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class EnemyFollow : MonoBehaviour { 
     Transform tr_Player;
-    float f_RotSpeed = 3.0f, f_MoveSpeed = 3.0f;
+    public float f_RotSpeed, f_MoveSpeed;
        GManager GManager;
 
         // Use this for initialization\r
