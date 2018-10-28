@@ -48,12 +48,14 @@ public class GManager : MonoBehaviour {
         }
         boneBar.text = "Number of Bones:  " + boneString;
 
+
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             SpawnChargeBone();
         }
         if (Input.GetKeyUp(KeyCode.Escape))
         {
+            Time.timeScale = 0f;
             pauseMenu.SetActive(true);
         }
     }
@@ -80,12 +82,15 @@ public class GManager : MonoBehaviour {
 
     public void RestartScene()
     {
+        Time.timeScale = 1f;
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }
 
     public void ResumeLevel()
     {
+        Time.timeScale = 1f;
+        Debug.Log(Time.timeScale);
         pauseMenu.SetActive(false);
     }
 }
