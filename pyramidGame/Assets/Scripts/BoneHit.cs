@@ -45,12 +45,14 @@ public class BoneHit : MonoBehaviour {
         }
         else if (transform.rotation == startHitRotation.rotation)
         {
+            gameObject.tag = "Untagged";
             attacking = false;
             halfway = false;
         }
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
             attacking = true;
+            gameObject.tag = "bone";
         }
     }
 }

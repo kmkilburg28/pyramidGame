@@ -343,6 +343,11 @@ Prefab:
       propertyPath: startingChargeBone
       value: 
       objectReference: {fileID: 491274818}
+    - target: {fileID: 114926875278529168, guid: 9fabf0e1fb1de4f8e8a85c1036bb2118,
+        type: 2}
+      propertyPath: numEnemies
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fabf0e1fb1de4f8e8a85c1036bb2118, type: 2}
   m_IsPrefabAsset: 0
