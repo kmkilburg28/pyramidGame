@@ -21,5 +21,9 @@ public class EnemyHit : MonoBehaviour {
             GManager.numBones--;
 
         }
+        if (other.gameObject.CompareTag("floor"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
