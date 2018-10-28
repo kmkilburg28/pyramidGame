@@ -10,7 +10,7 @@ public class GManager : MonoBehaviour {
     public int numEnemies;
     public string textPrompt = "";
 
-    private GameObject creditsMenu;
+    private 
 
     Text prompt;
 
@@ -28,19 +28,17 @@ public class GManager : MonoBehaviour {
         boneBar = GameObject.Find("BoneBar").GetComponent<Text>();
         pauseMenu = GameObject.Find("PauseCanvas");
         pauseMenu.SetActive(false);
-    
-        creditsMenu = GameObject.Find("CreditsCanvas");
-        creditsMenu.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-       if(numBones <= 0)
+      /* if(numBones <= 0)
         {
             pauseMenu.SetActive(true);
         }
-        
+        */
+
         string boneString = "";
         for (int i = 1; i <= numBones; i++)
         {
@@ -81,7 +79,6 @@ public class GManager : MonoBehaviour {
     public void RestartScene()
     {
         Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene.name);
     }
 
     public void ResumeLevel()

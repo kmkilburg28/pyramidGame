@@ -2486,6 +2486,11 @@ Prefab:
       propertyPath: startingChargeBone
       value: 
       objectReference: {fileID: 491274818}
+    - target: {fileID: 114926875278529168, guid: 9fabf0e1fb1de4f8e8a85c1036bb2118,
+        type: 2}
+      propertyPath: numEnemies
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fabf0e1fb1de4f8e8a85c1036bb2118, type: 2}
   m_IsPrefabAsset: 0
@@ -2527,7 +2532,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 0.5660378, g: 0.33313254, b: 0.06140977, a: 1}
+  m_Color: {r: 0.062745094, g: 0.4257291, b: 0.5647059, a: 1}
   m_Intensity: 5
   m_Range: 100
   m_SpotAngle: 30
