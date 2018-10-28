@@ -3525,7 +3525,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1617195543779306, guid: 4899ea8b2641e414e9bbb2a34a0a3cae, type: 2}
       propertyPath: m_TagString
-      value: bone
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1849743982261950, guid: 4899ea8b2641e414e9bbb2a34a0a3cae, type: 2}
       propertyPath: m_TagString
