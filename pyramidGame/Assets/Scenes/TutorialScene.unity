@@ -3361,52 +3361,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 82347ca138c20b1469ce3ac4b89f50fe,
     type: 3}
   m_PrefabInternal: {fileID: 855588000}
---- !u!1001 &2095100950
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 393403785}
-    m_Modifications:
-    - target: {fileID: 4146929161613824, guid: cb9bf2856ea83fd4581e89d8af72547c, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 1.52
-      objectReference: {fileID: 0}
-    - target: {fileID: 4146929161613824, guid: cb9bf2856ea83fd4581e89d8af72547c, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4146929161613824, guid: cb9bf2856ea83fd4581e89d8af72547c, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 3.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4146929161613824, guid: cb9bf2856ea83fd4581e89d8af72547c, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4146929161613824, guid: cb9bf2856ea83fd4581e89d8af72547c, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4146929161613824, guid: cb9bf2856ea83fd4581e89d8af72547c, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4146929161613824, guid: cb9bf2856ea83fd4581e89d8af72547c, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4146929161613824, guid: cb9bf2856ea83fd4581e89d8af72547c, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1572259309388050, guid: cb9bf2856ea83fd4581e89d8af72547c, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cb9bf2856ea83fd4581e89d8af72547c, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!4 &2134915392 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 82347ca138c20b1469ce3ac4b89f50fe,
