@@ -28,51 +28,54 @@ public class HeadMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(body.transform.position.x, body.transform.position.y+body.transform.localScale.y/1.1f, body.transform.position.z);
+        if (Time.timeScale != 0f)
+        {
+            transform.position = new Vector3(body.transform.position.x, body.transform.position.y + body.transform.localScale.y / 1.1f, body.transform.position.z);
 
 
-        mousePosition = Input.mousePosition;
-        mousePosition.x -= Screen.width / 2;
-        mousePosition.y -= Screen.height / 2;
-        float intensityX = (mousePosition.x / (Screen.width / 2));
-        float intensityY = (mousePosition.y / (Screen.height / 2));
+            mousePosition = Input.mousePosition;
+            mousePosition.x -= Screen.width / 2;
+            mousePosition.y -= Screen.height / 2;
+            float intensityX = (mousePosition.x / (Screen.width / 2));
+            float intensityY = (mousePosition.y / (Screen.height / 2));
 
-        if (Mathf.Abs(intensityX) < stillWindowSize)
-        {
-            intensityX = 0;
-        }
-        else if (intensityX < 0)
-        {
-            intensityX = ((mousePosition.x + stillWindowSize) / (Screen.width / 2));
-        }
-        else
-        {
-            intensityX = ((mousePosition.x - stillWindowSize) / (Screen.width / 2));
-        }
-        if (Mathf.Abs(intensityY) < stillWindowSize)
-        {
-            intensityY = 0;
-        }
-        else if (intensityY < 0)
-        {
-            intensityX = ((mousePosition.x + stillWindowSize) / (Screen.width / 2));
-        }
-        else
-        {
-            intensityX = ((mousePosition.x - stillWindowSize) / (Screen.width / 2));
-        }
+            if (Mathf.Abs(intensityX) < stillWindowSize)
+            {
+                intensityX = 0;
+            }
+            else if (intensityX < 0)
+            {
+                intensityX = ((mousePosition.x + stillWindowSize) / (Screen.width / 2));
+            }
+            else
+            {
+                intensityX = ((mousePosition.x - stillWindowSize) / (Screen.width / 2));
+            }
+            if (Mathf.Abs(intensityY) < stillWindowSize)
+            {
+                intensityY = 0;
+            }
+            else if (intensityY < 0)
+            {
+                intensityX = ((mousePosition.x + stillWindowSize) / (Screen.width / 2));
+            }
+            else
+            {
+                intensityX = ((mousePosition.x - stillWindowSize) / (Screen.width / 2));
+            }
 
-        yaw += speedH * intensityX;
-        pitch -= speedV * intensityY;
+            yaw += speedH * intensityX;
+            pitch -= speedV * intensityY;
 
-        if (-degreeOfRotation < pitch && pitch < degreeOfRotation)
-        {
-            transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
-        }
-        else
-        {
-            transform.eulerAngles = new Vector3(transform.eulerAngles.x, yaw, 0.0f);
-            pitch += speedV * intensityY;
+            if (-degreeOfRotation < pitch && pitch < degreeOfRotation)
+            {
+                transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
+            }
+            else
+            {
+                transform.eulerAngles = new Vector3(transform.eulerAngles.x, yaw, 0.0f);
+                pitch += speedV * intensityY;
+            }
         }
     }
 }
