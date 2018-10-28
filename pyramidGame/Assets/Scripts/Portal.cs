@@ -18,7 +18,7 @@ public class Portal : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("player"))
         {
-            SceneManager.LoadScene("SecondLevel");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

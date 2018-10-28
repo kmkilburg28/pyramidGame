@@ -1574,20 +1574,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1617195543779306, guid: 4899ea8b2641e414e9bbb2a34a0a3cae,
     type: 2}
   m_PrefabInternal: {fileID: 915925948}
---- !u!64 &491274824
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 491274818}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 419fb23c1605d6445a67970310bed896, type: 3}
 --- !u!1001 &497677850
 Prefab:
   m_ObjectHideFlags: 0
@@ -3481,21 +3467,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 1617195543779306, guid: 4899ea8b2641e414e9bbb2a34a0a3cae, type: 2}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 1849743982261950, guid: 4899ea8b2641e414e9bbb2a34a0a3cae, type: 2}
-      propertyPath: m_TagString
-      value: bone
-      objectReference: {fileID: 0}
-    - target: {fileID: 114627486814761820, guid: 4899ea8b2641e414e9bbb2a34a0a3cae,
-        type: 2}
-      propertyPath: attackSpeed
-      value: 500
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 64329975496393486, guid: 4899ea8b2641e414e9bbb2a34a0a3cae, type: 2}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4899ea8b2641e414e9bbb2a34a0a3cae, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &930502998 stripped
@@ -6353,23 +6325,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9022279407f690848971910042e1cc12, type: 3}
   m_IsPrefabAsset: 0
---- !u!1 &1855578479 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1849743982261950, guid: 4899ea8b2641e414e9bbb2a34a0a3cae,
-    type: 2}
-  m_PrefabInternal: {fileID: 915925948}
---- !u!65 &1855578485
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1855578479}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.049969465, y: 0.1, z: 0.24}
-  m_Center: {x: 0.0024911594, y: 0.0001904421, z: -0.04}
 --- !u!1 &1859597887 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 207e9e24ff27024439f37ed781da68f2,
