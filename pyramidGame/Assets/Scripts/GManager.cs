@@ -10,8 +10,11 @@ public class GManager : MonoBehaviour {
     public int numEnemies;
     public string textPrompt = "";
 
+<<<<<<< HEAD
     private 
 
+=======
+>>>>>>> 6b13e6c635db77d508e51301663c6dfe5c2fca63
     Text prompt;
 
     Text boneBar;
@@ -19,6 +22,8 @@ public class GManager : MonoBehaviour {
     public GameObject startingChargeBone;
 
     GameObject pauseMenu;
+    GameObject creditsMenu;
+    GameObject deathMenu;
 
 
     // Use this for initialization
@@ -26,8 +31,20 @@ public class GManager : MonoBehaviour {
     {
         prompt = GameObject.Find("Prompt").GetComponent<Text>();
         boneBar = GameObject.Find("BoneBar").GetComponent<Text>();
+
+        deathMenu = GameObject.Find("DeathCanvas");
+        deathMenu.SetActive(false);
+
         pauseMenu = GameObject.Find("PauseCanvas");
         pauseMenu.SetActive(false);
+<<<<<<< HEAD
+=======
+    
+        creditsMenu = GameObject.Find("CreditsCanvas");
+        creditsMenu.SetActive(false);
+
+        Time.timeScale = 1f;
+>>>>>>> 6b13e6c635db77d508e51301663c6dfe5c2fca63
     }
 
     // Update is called once per frame
@@ -35,7 +52,8 @@ public class GManager : MonoBehaviour {
     {
       /* if(numBones <= 0)
         {
-            pauseMenu.SetActive(true);
+            Time.timeScale = 0f;
+            deathMenu.SetActive(true);
         }
         */
 
@@ -46,12 +64,14 @@ public class GManager : MonoBehaviour {
         }
         boneBar.text = "Number of Bones:  " + boneString;
 
+
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             SpawnChargeBone();
         }
         if (Input.GetKeyUp(KeyCode.Escape))
         {
+            Time.timeScale = 0f;
             pauseMenu.SetActive(true);
         }
     }
@@ -74,15 +94,28 @@ public class GManager : MonoBehaviour {
     public void ChangeScene(string nextStage)
     {
         SceneManager.LoadScene(nextStage);
+        Time.timeScale = 1f;
     }
 
     public void RestartScene()
     {
         Scene scene = SceneManager.GetActiveScene();
+<<<<<<< HEAD
+=======
+        SceneManager.LoadScene(scene.name);
+        Time.timeScale = 1f;
+>>>>>>> 6b13e6c635db77d508e51301663c6dfe5c2fca63
     }
 
     public void ResumeLevel()
     {
+        Debug.Log(Time.timeScale);
         pauseMenu.SetActive(false);
+        Time.timeScale = 1f;
+    }
+
+    public void UnPause()
+    {
+        Time.timeScale = 1f;
     }
 }
