@@ -4777,6 +4777,16 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 967971837}
+    - target: {fileID: 114776914415075170, guid: 5e2667983159d4ee88e6f8af66f18335,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1837844388}
+    - target: {fileID: 114776914415075170, guid: 5e2667983159d4ee88e6f8af66f18335,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeScene
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e2667983159d4ee88e6f8af66f18335, type: 2}
   m_IsPrefabAsset: 0
@@ -5904,6 +5914,12 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1837844388 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114926875278529168, guid: 9fabf0e1fb1de4f8e8a85c1036bb2118,
+    type: 2}
+  m_PrefabInternal: {fileID: 729636389}
+  m_Script: {fileID: 11500000, guid: 803e373f485a14abfac9f396b57f6c0f, type: 3}
 --- !u!1001 &1844446046
 Prefab:
   m_ObjectHideFlags: 0
