@@ -39,6 +39,7 @@ public class BoneThrow : MonoBehaviour {
         charging = false;
         GManager = GameObject.Find("GManager").GetComponent<GManager>();
         thisRB = GetComponent<Rigidbody>();
+        gameObject.tag = "Untagged";
     }
 	
 	// Update is called once per frame
@@ -86,6 +87,7 @@ public class BoneThrow : MonoBehaviour {
                 }
                 else
                 {
+                    gameObject.tag = "bone";
                     transform.parent = null;
                     thisRB.isKinematic = false;
                     thisRB.AddRelativeForce(
