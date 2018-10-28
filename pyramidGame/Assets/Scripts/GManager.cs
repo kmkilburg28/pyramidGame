@@ -33,7 +33,11 @@ public class GManager : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-       
+       if(numBones <= 0)
+        {
+            pauseMenu.SetActive(true);
+        }
+        
         string boneString = "";
         for (int i = 1; i <= numBones; i++)
         {
