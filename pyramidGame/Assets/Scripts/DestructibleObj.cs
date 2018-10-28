@@ -24,6 +24,7 @@ public class DestructibleObj : MonoBehaviour {
     // Use this for initialization
     void Start () {
         GManager = GameObject.Find("GManager").GetComponent<GManager>();
+        GManager.numBones++;
     }
 	
 	// Update is called once per frame
