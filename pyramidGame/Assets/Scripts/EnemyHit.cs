@@ -27,6 +27,7 @@ public class EnemyHit : MonoBehaviour {
             
             if (!isInside)
             {
+                isInside = true;
                 thisCoroutine = InsidePlayer();
                 StartCoroutine(thisCoroutine);
             }
