@@ -113,6 +113,8 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+=======
 --- !u!1 &87414740
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,6 +274,7 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.46666667}
   m_EffectDistance: {x: 10, y: 10}
   m_UseGraphicAlpha: 1
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity
 --- !u!1 &355075946
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,6 +352,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+=======
 --- !u!1 &365031373
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,6 +590,7 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 396653955}
   m_CullTransparentMesh: 0
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity
 --- !u!1001 &511358022
 Prefab:
   m_ObjectHideFlags: 0
@@ -627,6 +633,9 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fabf0e1fb1de4f8e8a85c1036bb2118, type: 2}
   m_IsPrefabAsset: 0
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+--- !u!1001 &941723133
+=======
 --- !u!1 &530261704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,6 +1130,206 @@ CanvasRenderer:
   m_GameObject: {fileID: 932829466}
   m_CullTransparentMesh: 0
 --- !u!1001 &989392752
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+    - target: {fileID: 224299400002987434, guid: 055d59e81b3aa4674b143e1ae1c65182,
+=======
+    - target: {fileID: 224459146278677350, guid: 5eb87e5cc0b484420a23338490a21194,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224459146278677350, guid: 5eb87e5cc0b484420a23338490a21194,
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+    - target: {fileID: 224299400002987434, guid: 055d59e81b3aa4674b143e1ae1c65182,
+=======
+    - target: {fileID: 224459146278677350, guid: 5eb87e5cc0b484420a23338490a21194,
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+    - target: {fileID: 224299400002987434, guid: 055d59e81b3aa4674b143e1ae1c65182,
+=======
+    - target: {fileID: 224459146278677350, guid: 5eb87e5cc0b484420a23338490a21194,
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+    - target: {fileID: 224299400002987434, guid: 055d59e81b3aa4674b143e1ae1c65182,
+=======
+    - target: {fileID: 224459146278677350, guid: 5eb87e5cc0b484420a23338490a21194,
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+    - target: {fileID: 224299400002987434, guid: 055d59e81b3aa4674b143e1ae1c65182,
+=======
+    - target: {fileID: 224459146278677350, guid: 5eb87e5cc0b484420a23338490a21194,
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+    - target: {fileID: 224299400002987434, guid: 055d59e81b3aa4674b143e1ae1c65182,
+=======
+    - target: {fileID: 224459146278677350, guid: 5eb87e5cc0b484420a23338490a21194,
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+    - target: {fileID: 224299400002987434, guid: 055d59e81b3aa4674b143e1ae1c65182,
+=======
+    - target: {fileID: 224459146278677350, guid: 5eb87e5cc0b484420a23338490a21194,
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+    - target: {fileID: 224299400002987434, guid: 055d59e81b3aa4674b143e1ae1c65182,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224299400002987434, guid: 055d59e81b3aa4674b143e1ae1c65182,
+=======
+    - target: {fileID: 224459146278677350, guid: 5eb87e5cc0b484420a23338490a21194,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224459146278677350, guid: 5eb87e5cc0b484420a23338490a21194,
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+    - target: {fileID: 224299400002987434, guid: 055d59e81b3aa4674b143e1ae1c65182,
+=======
+    - target: {fileID: 224459146278677350, guid: 5eb87e5cc0b484420a23338490a21194,
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+    - target: {fileID: 224299400002987434, guid: 055d59e81b3aa4674b143e1ae1c65182,
+=======
+    - target: {fileID: 224459146278677350, guid: 5eb87e5cc0b484420a23338490a21194,
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+    - target: {fileID: 224299400002987434, guid: 055d59e81b3aa4674b143e1ae1c65182,
+=======
+    - target: {fileID: 224459146278677350, guid: 5eb87e5cc0b484420a23338490a21194,
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+    - target: {fileID: 224299400002987434, guid: 055d59e81b3aa4674b143e1ae1c65182,
+=======
+    - target: {fileID: 224459146278677350, guid: 5eb87e5cc0b484420a23338490a21194,
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+    - target: {fileID: 224299400002987434, guid: 055d59e81b3aa4674b143e1ae1c65182,
+=======
+    - target: {fileID: 224459146278677350, guid: 5eb87e5cc0b484420a23338490a21194,
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+    - target: {fileID: 224299400002987434, guid: 055d59e81b3aa4674b143e1ae1c65182,
+=======
+    - target: {fileID: 224459146278677350, guid: 5eb87e5cc0b484420a23338490a21194,
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+    - target: {fileID: 224299400002987434, guid: 055d59e81b3aa4674b143e1ae1c65182,
+=======
+    - target: {fileID: 224459146278677350, guid: 5eb87e5cc0b484420a23338490a21194,
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+    - target: {fileID: 224299400002987434, guid: 055d59e81b3aa4674b143e1ae1c65182,
+=======
+    - target: {fileID: 224459146278677350, guid: 5eb87e5cc0b484420a23338490a21194,
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+    - target: {fileID: 224299400002987434, guid: 055d59e81b3aa4674b143e1ae1c65182,
+=======
+    - target: {fileID: 224459146278677350, guid: 5eb87e5cc0b484420a23338490a21194,
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+    - target: {fileID: 114750817228952966, guid: 055d59e81b3aa4674b143e1ae1c65182,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 114926875278529168, guid: 9fabf0e1fb1de4f8e8a85c1036bb2118,
+        type: 2}
+    - target: {fileID: 114854692432545068, guid: 055d59e81b3aa4674b143e1ae1c65182,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2071890694}
+    - target: {fileID: 1030874268839934, guid: 055d59e81b3aa4674b143e1ae1c65182, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114750817228952966, guid: 055d59e81b3aa4674b143e1ae1c65182,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartScene
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 055d59e81b3aa4674b143e1ae1c65182, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &989392752
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1222,6 +1431,114 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1863682566764348, guid: 5eb87e5cc0b484420a23338490a21194, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5eb87e5cc0b484420a23338490a21194, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1272758079
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 224560806450213574, guid: e0ebf479e11314dcaad821dffdbb7748,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560806450213574, guid: e0ebf479e11314dcaad821dffdbb7748,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560806450213574, guid: e0ebf479e11314dcaad821dffdbb7748,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560806450213574, guid: e0ebf479e11314dcaad821dffdbb7748,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560806450213574, guid: e0ebf479e11314dcaad821dffdbb7748,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560806450213574, guid: e0ebf479e11314dcaad821dffdbb7748,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560806450213574, guid: e0ebf479e11314dcaad821dffdbb7748,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560806450213574, guid: e0ebf479e11314dcaad821dffdbb7748,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560806450213574, guid: e0ebf479e11314dcaad821dffdbb7748,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560806450213574, guid: e0ebf479e11314dcaad821dffdbb7748,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560806450213574, guid: e0ebf479e11314dcaad821dffdbb7748,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560806450213574, guid: e0ebf479e11314dcaad821dffdbb7748,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560806450213574, guid: e0ebf479e11314dcaad821dffdbb7748,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560806450213574, guid: e0ebf479e11314dcaad821dffdbb7748,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560806450213574, guid: e0ebf479e11314dcaad821dffdbb7748,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560806450213574, guid: e0ebf479e11314dcaad821dffdbb7748,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560806450213574, guid: e0ebf479e11314dcaad821dffdbb7748,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560806450213574, guid: e0ebf479e11314dcaad821dffdbb7748,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e0ebf479e11314dcaad821dffdbb7748, type: 2}
+  m_IsPrefabAsset: 0
+=======
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eb87e5cc0b484420a23338490a21194, type: 2}
   m_IsPrefabAsset: 0
@@ -1828,6 +2145,7 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1427132393}
   m_CullTransparentMesh: 0
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity
 --- !u!1 &1605413737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1890,6 +2208,110 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1647726457
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 224160145296139522, guid: 5e2667983159d4ee88e6f8af66f18335,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224160145296139522, guid: 5e2667983159d4ee88e6f8af66f18335,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224160145296139522, guid: 5e2667983159d4ee88e6f8af66f18335,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224160145296139522, guid: 5e2667983159d4ee88e6f8af66f18335,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224160145296139522, guid: 5e2667983159d4ee88e6f8af66f18335,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224160145296139522, guid: 5e2667983159d4ee88e6f8af66f18335,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224160145296139522, guid: 5e2667983159d4ee88e6f8af66f18335,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224160145296139522, guid: 5e2667983159d4ee88e6f8af66f18335,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224160145296139522, guid: 5e2667983159d4ee88e6f8af66f18335,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224160145296139522, guid: 5e2667983159d4ee88e6f8af66f18335,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224160145296139522, guid: 5e2667983159d4ee88e6f8af66f18335,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224160145296139522, guid: 5e2667983159d4ee88e6f8af66f18335,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224160145296139522, guid: 5e2667983159d4ee88e6f8af66f18335,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224160145296139522, guid: 5e2667983159d4ee88e6f8af66f18335,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224160145296139522, guid: 5e2667983159d4ee88e6f8af66f18335,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224160145296139522, guid: 5e2667983159d4ee88e6f8af66f18335,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224160145296139522, guid: 5e2667983159d4ee88e6f8af66f18335,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224160145296139522, guid: 5e2667983159d4ee88e6f8af66f18335,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754131106991606, guid: 5e2667983159d4ee88e6f8af66f18335, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e2667983159d4ee88e6f8af66f18335, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1981512345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1956,6 +2378,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+<<<<<<< HEAD:pyramidGame/Assets/Scenes/StartScreenTests.unity
+--- !u!1 &2071890694 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1142500745295992, guid: e0ebf479e11314dcaad821dffdbb7748,
+    type: 2}
+  m_PrefabInternal: {fileID: 1272758079}
+=======
 --- !u!1 &2001237457
 GameObject:
   m_ObjectHideFlags: 0
@@ -2230,3 +2659,4 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2124971755}
   m_CullTransparentMesh: 0
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633:pyramidGame/Assets/Scenes/StartScreen.unity

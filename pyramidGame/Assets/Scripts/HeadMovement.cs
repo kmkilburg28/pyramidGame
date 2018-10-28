@@ -41,9 +41,25 @@ public class HeadMovement : MonoBehaviour
         {
             intensityX = 0;
         }
+        else if (intensityX < 0)
+        {
+            intensityX = ((mousePosition.x + stillWindowSize) / (Screen.width / 2));
+        }
+        else
+        {
+            intensityX = ((mousePosition.x - stillWindowSize) / (Screen.width / 2));
+        }
         if (Mathf.Abs(intensityY) < stillWindowSize)
         {
             intensityY = 0;
+        }
+        else if (intensityY < 0)
+        {
+            intensityX = ((mousePosition.x + stillWindowSize) / (Screen.width / 2));
+        }
+        else
+        {
+            intensityX = ((mousePosition.x - stillWindowSize) / (Screen.width / 2));
         }
 
         yaw += speedH * intensityX;
