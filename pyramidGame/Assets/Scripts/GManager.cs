@@ -56,12 +56,12 @@ public class GManager : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             Debug.Log("hello");
             map.SetActive(true);
         }
-        if (Input.GetKeyUp(KeyCode.P))
+        if (Input.GetKeyUp(KeyCode.Tab))
         {
             Debug.Log("hello");
             map.SetActive(false);

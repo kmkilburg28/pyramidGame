@@ -8,8 +8,8 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: Map
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSION
-  m_LightmapFlags: 1
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -72,5 +72,5 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.4716981, g: 0.34150463, b: 0.21137415, a: 0.29411766}
-    - _EmissionColor: {r: 0.2735849, g: 0.1468873, b: 0.073558204, a: 1}
+    - _Color: {r: 0.75294125, g: 0.75294125, b: 0.75294125, a: 0}
+    - _EmissionColor: {r: 0.028301895, g: 0.015235899, b: 0.014818445, a: 1}
