@@ -781,6 +781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   f_RotSpeed: 3
   f_MoveSpeed: 1
+  minimumDistance: 10
 --- !u!114 &114322593086262052
 MonoBehaviour:
   m_ObjectHideFlags: 1
