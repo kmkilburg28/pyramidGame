@@ -12,9 +12,14 @@ public class DestructibleObj : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("bone"))
         {
+           
+            
             Instantiate(destroyedVersion, transform.position, transform.rotation);
-            GManager.numEnemies--;
             Destroy(transform.parent.gameObject);
+            GManager.numEnemies--;
+
+            Debug.Log("minus");
+            
         } 
     }
 

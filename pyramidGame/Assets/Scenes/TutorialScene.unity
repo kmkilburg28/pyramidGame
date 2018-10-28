@@ -188,7 +188,8 @@ Prefab:
       propertyPath: tr_Player
       value: 
       objectReference: {fileID: 393403785}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114352414605104444, guid: 65a25aa6f6d8f4d4fa8b34fbd2b3affd, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 65a25aa6f6d8f4d4fa8b34fbd2b3affd, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &127422784
@@ -238,7 +239,7 @@ Prefab:
     - target: {fileID: 114926875278529168, guid: 9fabf0e1fb1de4f8e8a85c1036bb2118,
         type: 2}
       propertyPath: numEnemies
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fabf0e1fb1de4f8e8a85c1036bb2118, type: 2}
@@ -1583,7 +1584,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 64794756223417938, guid: 4899ea8b2641e414e9bbb2a34a0a3cae, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 4899ea8b2641e414e9bbb2a34a0a3cae, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &977364690 stripped
@@ -2395,7 +2397,9 @@ Prefab:
       propertyPath: minimumDistance
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114041499475821018, guid: 1cb7ccfffb27b7e45b6db0862f6a7bc6, type: 2}
+    - {fileID: 114878263647332774, guid: 1cb7ccfffb27b7e45b6db0862f6a7bc6, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 1cb7ccfffb27b7e45b6db0862f6a7bc6, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &1369101011 stripped
