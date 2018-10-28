@@ -10,8 +10,6 @@ public class GManager : MonoBehaviour {
     public int numEnemies;
     public string textPrompt = "";
 
-    private GameObject creditsMenu;
-
     Text prompt;
 
     Text boneBar;
@@ -19,6 +17,8 @@ public class GManager : MonoBehaviour {
     public GameObject startingChargeBone;
 
     GameObject pauseMenu;
+    GameObject creditsMenu;
+    GameObject deathMenu;
 
 
     // Use this for initialization
@@ -26,11 +26,17 @@ public class GManager : MonoBehaviour {
     {
         prompt = GameObject.Find("Prompt").GetComponent<Text>();
         boneBar = GameObject.Find("BoneBar").GetComponent<Text>();
+
+        deathMenu = GameObject.Find("DeathCanvas");
+        deathMenu.SetActive(false);
+
         pauseMenu = GameObject.Find("PauseCanvas");
         pauseMenu.SetActive(false);
     
         creditsMenu = GameObject.Find("CreditsCanvas");
         creditsMenu.SetActive(false);
+
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame
@@ -38,7 +44,8 @@ public class GManager : MonoBehaviour {
     {
        if(numBones <= 0)
         {
-            pauseMenu.SetActive(true);
+            Time.timeScale = 0f;
+            deathMenu.SetActive(true);
         }
         
         string boneString = "";
@@ -78,19 +85,25 @@ public class GManager : MonoBehaviour {
     public void ChangeScene(string nextStage)
     {
         SceneManager.LoadScene(nextStage);
+        Time.timeScale = 1f;
     }
 
     public void RestartScene()
     {
-        Time.timeScale = 1f;
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
+        Time.timeScale = 1f;
     }
 
     public void ResumeLevel()
     {
-        Time.timeScale = 1f;
         Debug.Log(Time.timeScale);
         pauseMenu.SetActive(false);
+        Time.timeScale = 1f;
+    }
+
+    public void UnPause()
+    {
+        Time.timeScale = 1f;
     }
 }
