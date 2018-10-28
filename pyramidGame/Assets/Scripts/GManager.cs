@@ -25,11 +25,10 @@ public class GManager : MonoBehaviour {
     {
         prompt = GameObject.Find("Prompt").GetComponent<Text>();
         boneBar = GameObject.Find("BoneBar").GetComponent<Text>();
-        pauseMenu = GameObject.Find("PauseCanvas");
-        pauseMenu.SetActive(false);
         creditsMenu = GameObject.Find("CreditsCanvas");
         creditsMenu.SetActive(false);
-
+        pauseMenu = GameObject.Find("PauseCanvas");
+        pauseMenu.SetActive(false);
     }
 
     // Update is called once per frame
