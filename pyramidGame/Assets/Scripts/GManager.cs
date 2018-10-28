@@ -26,11 +26,11 @@ public class GManager : MonoBehaviour {
     {
         prompt = GameObject.Find("Prompt").GetComponent<Text>();
         boneBar = GameObject.Find("BoneBar").GetComponent<Text>();
-        creditsMenu = GameObject.Find("CreditsCanvas");
-        creditsMenu.SetActive(false);
-
         pauseMenu = GameObject.Find("PauseCanvas");
         pauseMenu.SetActive(false);
+    
+        creditsMenu = GameObject.Find("CreditsCanvas");
+        creditsMenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -77,6 +77,7 @@ public class GManager : MonoBehaviour {
     public void RestartScene()
     {
         Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
     }
 
     public void ResumeLevel()

@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803e373f485a14abfac9f396b57f6c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numBones: 1
+  numBones: 23
+  numEnemies: 10
   textPrompt: 
   startingChargeBone: {fileID: 0}
