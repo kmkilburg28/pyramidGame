@@ -20,10 +20,14 @@ public class GManager : MonoBehaviour {
     GameObject creditsMenu;
     GameObject deathMenu;
 
+    private float level;
+
 
     // Use this for initialization
     void Start()
     {
+        level = SceneManager.GetActiveScene().buildIndex;
+
         prompt = GameObject.Find("Prompt").GetComponent<Text>();
         boneBar = GameObject.Find("BoneBar").GetComponent<Text>();
 
@@ -80,6 +84,11 @@ public class GManager : MonoBehaviour {
             chargeBone.SetActive(true);
             numBones--;
         }
+    }
+
+    public void NextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void ChangeScene(string nextStage)

@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 114416171712747402}
   - component: {fileID: 54881165074440564}
   - component: {fileID: 64794756223417938}
+  - component: {fileID: 64166236457335224}
   m_Layer: 0
   m_Name: ThrowArmBone
   m_TagString: Untagged
@@ -176,10 +177,10 @@ GameObject:
   - component: {fileID: 33427024745937052}
   - component: {fileID: 23566179780720034}
   - component: {fileID: 114627486814761820}
-  - component: {fileID: 64329975496393486}
+  - component: {fileID: 65956950028959348}
   m_Layer: 0
   m_Name: HitArmBone
-  m_TagString: Untagged
+  m_TagString: bone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -290,7 +291,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1617492973251360}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 13.641798, y: 0.57, z: -8.803652}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4217228183593296}
@@ -818,12 +819,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64329975496393486
+--- !u!64 &64166236457335224
 MeshCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1849743982261950}
+  m_GameObject: {fileID: 1617195543779306}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -858,6 +859,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65956950028959348
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1849743982261950}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.049969465, y: 0.1, z: 0.24}
+  m_Center: {x: 0.0024911594, y: 0.0001904421, z: -0.04}
 --- !u!81 &81903173404737860
 AudioListener:
   m_ObjectHideFlags: 1
@@ -906,4 +919,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f0807e07de004e1da0d1705dff082a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackSpeed: 300
+  attackSpeed: 500
