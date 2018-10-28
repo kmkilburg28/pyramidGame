@@ -3,27 +3,56 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyHit : MonoBehaviour {
+
     GManager GManager;
+
+    private bool isInside;
+
+    IEnumerator thisCoroutine;
+
     // Use this for initialization
     void Start () {
         GManager = GameObject.Find("GManager").GetComponent<GManager>();
+        isInside = false;
     }
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
-    void OnTriggerStay(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("player"))
         {
             
-            GManager.numBones--;
+            if (!isInside)
+            {
+                thisCoroutine = InsidePlayer();
+                StartCoroutine(thisCoroutine);
+            }
 
         }
-        if (other.gameObject.CompareTag("floor"))
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("player"))
         {
-            Destroy(gameObject);
+            isInside = false;
+        }
+    }
+
+    IEnumerator InsidePlayer()
+    {
+        while (isInside)
+        {
+            GManager.numBones--;
+            yield return new WaitForSeconds(1);
+        }
+        if (!isInside)
+        {
+            StopCoroutine(thisCoroutine);
+            yield return null;
         }
     }
 }
