@@ -5,6 +5,8 @@ using UnityEngine;
 public class DestructibleObj : MonoBehaviour {
 
     public GameObject destroyedVersion;
+    GManager GManager;
+
 
       void OnTriggerEnter(Collider other)
     {
@@ -12,6 +14,7 @@ public class DestructibleObj : MonoBehaviour {
         {
             Instantiate(destroyedVersion, transform.position, transform.rotation);
             Destroy(transform.parent.gameObject);
+          //  GManager.numBones--;
         }
     }
 
@@ -20,8 +23,8 @@ public class DestructibleObj : MonoBehaviour {
    
     // Use this for initialization
     void Start () {
-		
-	}
+         GManager = GameObject.Find("GManager").GetComponent<GManager>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
