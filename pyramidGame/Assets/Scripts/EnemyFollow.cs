@@ -7,12 +7,12 @@ using UnityEngine;
 public class EnemyFollow : MonoBehaviour { 
     Transform tr_Player;
     public float f_RotSpeed, f_MoveSpeed;
-       GManager GManager;
+       
 
         // Use this for initialization\r
         void Start()
     {
-        GManager = GameObject.Find("GManager").GetComponent<GManager>();
+       
         tr_Player = GameObject.FindGameObjectWithTag("player").transform;
     }
 
@@ -27,13 +27,5 @@ public class EnemyFollow : MonoBehaviour {
     transform.position += transform.forward * f_MoveSpeed * Time.deltaTime;
 
     }
-    void OnTriggerEnter(Collider other)
-     {
-            if (other.gameObject.CompareTag("player"))
-            {
-                Destroy(gameObject);
-                GManager.numBones--;
-           
-        }
-      }
+    
 }

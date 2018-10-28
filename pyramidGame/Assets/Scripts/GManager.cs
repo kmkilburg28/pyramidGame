@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GManager : MonoBehaviour {
 
@@ -15,12 +16,16 @@ public class GManager : MonoBehaviour {
 
     public GameObject startingChargeBone;
 
+    GameObject pauseMenu;
+
 
     // Use this for initialization
     void Start()
     {
         prompt = GameObject.Find("Prompt").GetComponent<Text>();
         boneBar = GameObject.Find("BoneBar").GetComponent<Text>();
+        pauseMenu = GameObject.Find("PauseCanvas");
+        pauseMenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -37,6 +42,10 @@ public class GManager : MonoBehaviour {
         {
             SpawnChargeBone();
         }
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            pauseMenu.SetActive(true);
+        }
     }
 
     public void AddText(string textToAdd)
@@ -52,5 +61,20 @@ public class GManager : MonoBehaviour {
             chargeBone.SetActive(true);
             numBones--;
         }
+    }
+
+    public void ChangeScene(string nextStage)
+    {
+        SceneManager.LoadScene(nextStage);
+    }
+
+    public void RestartScene()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+    }
+
+    public void ResumeLevel()
+    {
+        pauseMenu.SetActive(false);
     }
 }
