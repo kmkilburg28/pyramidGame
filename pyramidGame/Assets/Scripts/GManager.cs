@@ -31,7 +31,15 @@ public class GManager : MonoBehaviour {
         prompt = GameObject.Find("Prompt").GetComponent<Text>();
         boneBar = GameObject.Find("BoneBar").GetComponent<Text>();
         levelText = GameObject.Find("LevelText").GetComponent<Text>();
-        levelText.text = "Level: " + level;
+        level--;
+        if (level == 0)
+        {
+            levelText.text = "Level: Tutorial";
+        }
+        else
+        {
+            levelText.text = "Level: " + level;
+        }
 
         deathMenu = GameObject.Find("DeathCanvas");
         deathMenu.SetActive(false);
