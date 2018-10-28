@@ -7,8 +7,10 @@ using UnityEngine.SceneManagement;
 public class GManager : MonoBehaviour {
 
 	public int numBones;
-
+    public int numEnemies;
     public string textPrompt = "";
+
+    private 
 
     Text prompt;
 
@@ -31,6 +33,7 @@ public class GManager : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+       
         string boneString = "";
         for (int i = 1; i <= numBones; i++)
         {
