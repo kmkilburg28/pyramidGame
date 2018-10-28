@@ -7,8 +7,10 @@ using UnityEngine.SceneManagement;
 public class GManager : MonoBehaviour {
 
 	public int numBones;
-
+    public int numEnemies;
     public string textPrompt = "";
+
+    private 
 
     Text prompt;
 
@@ -17,7 +19,6 @@ public class GManager : MonoBehaviour {
     public GameObject startingChargeBone;
 
     GameObject pauseMenu;
-    GameObject creditsMenu;
 
 
     // Use this for initialization
@@ -25,8 +26,11 @@ public class GManager : MonoBehaviour {
     {
         prompt = GameObject.Find("Prompt").GetComponent<Text>();
         boneBar = GameObject.Find("BoneBar").GetComponent<Text>();
+<<<<<<< HEAD
         creditsMenu = GameObject.Find("CreditsCanvas");
         creditsMenu.SetActive(false);
+=======
+>>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633
         pauseMenu = GameObject.Find("PauseCanvas");
         pauseMenu.SetActive(false);
     }
@@ -34,6 +38,7 @@ public class GManager : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+       
         string boneString = "";
         for (int i = 1; i <= numBones; i++)
         {
@@ -74,6 +79,10 @@ public class GManager : MonoBehaviour {
     public void RestartScene()
     {
         Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene.name);
+    }
+
+    public void ResumeLevel()
+    {
+        pauseMenu.SetActive(false);
     }
 }
