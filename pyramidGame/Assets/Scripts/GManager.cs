@@ -11,8 +11,8 @@ public class GManager : MonoBehaviour {
     public string textPrompt = "";
 
     Text prompt;
-
     Text boneBar;
+    Text levelText;
 
     public GameObject startingChargeBone;
 
@@ -30,6 +30,8 @@ public class GManager : MonoBehaviour {
 
         prompt = GameObject.Find("Prompt").GetComponent<Text>();
         boneBar = GameObject.Find("BoneBar").GetComponent<Text>();
+        levelText = GameObject.Find("LevelText").GetComponent<Text>();
+        levelText.text = "Level: " + level;
 
         deathMenu = GameObject.Find("DeathCanvas");
         deathMenu.SetActive(false);
