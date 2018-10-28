@@ -10,7 +10,7 @@ public class GManager : MonoBehaviour {
     public int numEnemies;
     public string textPrompt = "";
 
-    private 
+    private GameObject creditsMenu;
 
     Text prompt;
 
@@ -26,11 +26,9 @@ public class GManager : MonoBehaviour {
     {
         prompt = GameObject.Find("Prompt").GetComponent<Text>();
         boneBar = GameObject.Find("BoneBar").GetComponent<Text>();
-<<<<<<< HEAD
         creditsMenu = GameObject.Find("CreditsCanvas");
         creditsMenu.SetActive(false);
-=======
->>>>>>> 7a4c34a2fa5a4721493ea6a3ea590eb7519af633
+
         pauseMenu = GameObject.Find("PauseCanvas");
         pauseMenu.SetActive(false);
     }
