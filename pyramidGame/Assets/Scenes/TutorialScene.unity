@@ -272,7 +272,7 @@ Prefab:
     - target: {fileID: 114570059378441092, guid: 7841793469e8540d7ad3848a63f647f8,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224846199181533888, guid: 7841793469e8540d7ad3848a63f647f8,
         type: 2}
@@ -373,7 +373,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1483024696}
     - target: {fileID: 114570059378441092, guid: 7841793469e8540d7ad3848a63f647f8,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -398,7 +398,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1483024696}
     - target: {fileID: 114404400019458320, guid: 7841793469e8540d7ad3848a63f647f8,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1293,7 +1293,7 @@ Prefab:
     - target: {fileID: 114535277762349898, guid: 933cf9a1d134dc5409fb101f7d3c2b73,
         type: 2}
       propertyPath: maximumAttackDistance
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 933cf9a1d134dc5409fb101f7d3c2b73, type: 2}
@@ -1784,7 +1784,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4678997516534808, guid: 372cee3a0d95c4e3ba8a815bb86c9da6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 14.56
+      value: 14.74
       objectReference: {fileID: 0}
     - target: {fileID: 4678997516534808, guid: 372cee3a0d95c4e3ba8a815bb86c9da6, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2301,7 +2301,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1483024696}
     - target: {fileID: 114854692432545068, guid: 055d59e81b3aa4674b143e1ae1c65182,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2311,12 +2311,12 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1483024696}
     - target: {fileID: 114506958912077936, guid: 055d59e81b3aa4674b143e1ae1c65182,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1483024696}
     - target: {fileID: 114710743045834528, guid: 055d59e81b3aa4674b143e1ae1c65182,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -2341,6 +2341,11 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: RestartScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 114710743045834528, guid: 055d59e81b3aa4674b143e1ae1c65182,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 055d59e81b3aa4674b143e1ae1c65182, type: 2}
