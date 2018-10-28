@@ -17,6 +17,7 @@ public class GManager : MonoBehaviour {
     public GameObject startingChargeBone;
 
     GameObject pauseMenu;
+    GameObject creditsMenu;
 
 
     // Use this for initialization
@@ -26,6 +27,9 @@ public class GManager : MonoBehaviour {
         boneBar = GameObject.Find("BoneBar").GetComponent<Text>();
         pauseMenu = GameObject.Find("PauseCanvas");
         pauseMenu.SetActive(false);
+        creditsMenu = GameObject.Find("PauseCanvas");
+        creditsMenu.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -71,10 +75,6 @@ public class GManager : MonoBehaviour {
     public void RestartScene()
     {
         Scene scene = SceneManager.GetActiveScene();
-    }
-
-    public void ResumeLevel()
-    {
-        pauseMenu.SetActive(false);
+        SceneManager.LoadScene(scene.name);
     }
 }
