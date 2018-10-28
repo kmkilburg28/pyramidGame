@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ArrowHit : MonoBehaviour {
     GManager GManager;
+    public float damageVelocity;
    
     // Use this for initialization
     void Start () {
@@ -19,8 +20,19 @@ public class ArrowHit : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("player"))
         {
-            
-            GManager.numBones--;
+
+            if (GetComponent<Rigidbody>().velocity.x >= damageVelocity)
+            {
+                GManager.numBones--;
+            }
+            else if (GetComponent<Rigidbody>().velocity.y >= damageVelocity)
+            {
+                GManager.numBones--;
+            }
+            else if (GetComponent<Rigidbody>().velocity.z >= damageVelocity)
+            {
+                GManager.numBones--;
+            }
 
         }
         if (other.gameObject.CompareTag("floor"))
