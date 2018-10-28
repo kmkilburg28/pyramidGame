@@ -8089,7 +8089,8 @@ Prefab:
       propertyPath: attackSpeed
       value: 500
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 64329975496393486, guid: 4899ea8b2641e414e9bbb2a34a0a3cae, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 4899ea8b2641e414e9bbb2a34a0a3cae, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &930502998 stripped
@@ -10952,8 +10953,13 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1849743982261950, guid: 4899ea8b2641e414e9bbb2a34a0a3cae,
     type: 2}
   m_PrefabInternal: {fileID: 915925948}
+<<<<<<< HEAD
 --- !u!136 &1855578485
 CapsuleCollider:
+=======
+--- !u!65 &1855578485
+BoxCollider:
+>>>>>>> 09515c2de6214d9e840c1f28f92fe6397233fe23
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -10961,10 +10967,16 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
+<<<<<<< HEAD
   m_Radius: 0.023216726
   m_Height: 0.25
   m_Direction: 2
   m_Center: {x: 0.02, y: 0.02, z: -0.05}
+=======
+  serializedVersion: 2
+  m_Size: {x: 0.049969465, y: 0.1, z: 0.24}
+  m_Center: {x: 0.0024911594, y: 0.0001904421, z: -0.04}
+>>>>>>> 09515c2de6214d9e840c1f28f92fe6397233fe23
 --- !u!1 &1859597887 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 207e9e24ff27024439f37ed781da68f2,
