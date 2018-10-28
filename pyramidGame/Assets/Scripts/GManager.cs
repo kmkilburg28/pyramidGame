@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GManager : MonoBehaviour {
 
-	public int numBones;
+    public int numBones;
     public int numEnemies;
     public string textPrompt = "";
 
@@ -19,27 +19,24 @@ public class GManager : MonoBehaviour {
     GameObject pauseMenu;
     GameObject creditsMenu;
     GameObject deathMenu;
+    GameObject map;
 
     private float level;
 
-
+    private void Awake()
+    {
+        map = GameObject.Find("mapPyramid");
+    }
     // Use this for initialization
     void Start()
     {
+
         level = SceneManager.GetActiveScene().buildIndex;
 
         prompt = GameObject.Find("Prompt").GetComponent<Text>();
         boneBar = GameObject.Find("BoneBar").GetComponent<Text>();
         levelText = GameObject.Find("LevelText").GetComponent<Text>();
-        level--;
-        if (level == 0)
-        {
-            levelText.text = "Level: Tutorial";
-        }
-        else
-        {
-            levelText.text = "Level: " + level;
-        }
+        levelText.text = "Level: " + level;
 
         deathMenu = GameObject.Find("DeathCanvas");
         deathMenu.SetActive(false);
@@ -51,12 +48,26 @@ public class GManager : MonoBehaviour {
         creditsMenu.SetActive(false);
 
         Time.timeScale = 1f;
+        numBones = PlayerPrefs.GetInt("Player Score");
+        map.SetActive(false);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-       if(numBones <= 0)
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Debug.Log("hello");
+            map.SetActive(true);
+        }
+        if (Input.GetKeyUp(KeyCode.P))
+        {
+            Debug.Log("hello");
+            map.SetActive(false);
+        }
+
+        if (numBones <= 0)
         {
             Time.timeScale = 0f;
             deathMenu.SetActive(true);
@@ -88,7 +99,7 @@ public class GManager : MonoBehaviour {
 
     void SpawnChargeBone()
     {
-        if (numBones > 1 || true)
+        if (numBones > 1)
         {
             GameObject chargeBone = Instantiate(startingChargeBone, startingChargeBone.transform.position, startingChargeBone.transform.rotation, GameObject.Find("ThrowablePoint").GetComponent<Transform>());
             chargeBone.SetActive(true);

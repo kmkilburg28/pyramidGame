@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class ArrowHit : MonoBehaviour {
     GManager GManager;
+   
     // Use this for initialization
     void Start () {
         GManager = GameObject.Find("GManager").GetComponent<GManager>();
+
     }
 	
 	// Update is called once per frame
